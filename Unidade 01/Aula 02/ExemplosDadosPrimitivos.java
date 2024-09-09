@@ -1,4 +1,4 @@
-public class ExemplosDadosPrimarios {
+public class ExemplosDadosPrimitivos {
     public static void main(String[] args){
 
 

@@ -1,5 +1,7 @@
-public class VariaveisPrimitivas {
-    
+public class Exer01 {
+    //Exercício 1: Variáveis Primitivas
+//Crie um programa que declare variáveis para armazenar um número inteiro, um número de ponto flutuante e uma string. Atribua valores a essas variáveis e exiba-as na tela.
+
     public static void main(String[] args) {
 
         int numerointeiro = 10;

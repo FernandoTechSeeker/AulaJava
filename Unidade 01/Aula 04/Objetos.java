@@ -7,7 +7,7 @@ public class Objetos {
     //Construtor
     public Objetos(String nome, int idade, float peso){
         this.nome = nome;
-        this.idade = idade;
+        Objetos.idade = idade;
         this.peso = peso;
 
     }

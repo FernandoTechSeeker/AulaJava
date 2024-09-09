@@ -53,28 +53,30 @@ public class Pessoa {
         // this.idade += 1;
      }
     public static void main(String[] args) {
-       Scanner scanner = new Scanner(System.in);
-      
-        Pessoa pessoa = new Pessoa("Nando", 35, 84.4f);
+       try (Scanner scanner = new Scanner(System.in)) {
+         Pessoa pessoa = new Pessoa("Nando", 35, 84.4f);
 
-        pessoa.exibirInfos();
-        pessoa.aniversario();
-        pessoa.exibirInfos();
-        
-        pessoa.setNome("Fernando");
-        pessoa.setPeso(94.4f);
-        pessoa.exibirInfos();
+           pessoa.exibirInfos();
+           pessoa.aniversario();
+           pessoa.exibirInfos();
+           
+           pessoa.setNome("Fernando");
+           pessoa.setPeso(94.4f);
+           pessoa.exibirInfos();
 
-        System.out.print("Digite seu nome: ");
-        String nome = scanner.nextLine();
-        System.out.print("Digite sua idade: ");
-        int idade = Integer.parseInt(scanner.nextLine());
-        System.out.print("Digite seu peso: ");
-        float peso = Float.parseFloat(scanner.nextLine());
+           System.out.print("Digite seu nome: ");
+           String nome = scanner.nextLine();
+           System.out.print("Digite sua idade: ");
+           int idade = Integer.parseInt(scanner.nextLine());
+           System.out.print("Digite seu peso: ");
+           float peso = Float.parseFloat(scanner.nextLine());
 
-        Pessoa pessoa2 = new Pessoa(nome, idade, peso);
-        
-        pessoa2.exibirInfos();
+           Pessoa pessoa2 = new Pessoa(nome, idade, peso);
+           
+           pessoa2.exibirInfos();
+      } catch (NumberFormatException e) {
+         
+      }
     }
     
 }

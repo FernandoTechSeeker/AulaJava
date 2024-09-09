@@ -1,9 +1,5 @@
 public class ExemplosDadosNPrimitivo {
     public static void main(String [] args){
-        // tipos caracter PRIMITIVO
-        char caracter = 'A' ;
-
-
         // tipo caracteres Não PRIMITIVO
         String nome = "Fernando";
         nome = "Fernando Canto";

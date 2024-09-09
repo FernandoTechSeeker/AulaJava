@@ -7,11 +7,23 @@ public class Lacos {
 
             
         }
-        int x = 1;
+
+        //Laço While, repete N vezes ate que não seja mais verdade
+        int x = 6;
         while (x <= 5) {
             System.out.println(x);
-            
+            x++;
         }
+
+        //Laço Do While, repete N vezes ate que não seja mais verdade, mas  acontece pelo menos uma vez
+        int j = 6;
+        do{
+            System.out.println(j);
+            j++;
+
+        } while(j <= 5);
+
+        
     }
     
 }

@@ -10,8 +10,18 @@ public class ExemploFila {
 
         //Adicionar itens a fila
         fila.offer("1 fila");
+        fila.offer("2 fila");
+        fila.offer("3 fila");
 
-        System.out.println(fila);
+        // exibir a primeira da fila
+        System.out.println(fila.peek());
+
+        //remover o primeiro item da fila e exibiro item
+        System.out.println(fila.poll());
         
+        while (!fila.isEmpty()) {
+        
+        System.out.println(fila.poll());
+        }
     }
 }

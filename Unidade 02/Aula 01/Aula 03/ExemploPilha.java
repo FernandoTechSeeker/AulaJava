@@ -26,7 +26,7 @@ public class ExemploPilha {
 
         // laço while ele so roda quando é verdadeiro "!"
         //condiconal invertendo a informação  se der verdadeiro ele reponde falso e vice versa
-        //desempilhando toda a pilha intem a intem 
+        //desempilhando toda a pilha item a item 
         while (!pilha.isEmpty()) {
             System.out.println(pilha.pop());
         }

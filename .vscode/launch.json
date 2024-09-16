@@ -1,0 +1,70 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Documentos",
+            "request": "launch",
+            "mainClass": "Documentos",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "ExemploFila",
+            "request": "launch",
+            "mainClass": "ExemploFila",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "ExemploInsertionSort$InsertionSort",
+            "request": "launch",
+            "mainClass": "ExemploInsertionSort$InsertionSort",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "ExemploPilha",
+            "request": "launch",
+            "mainClass": "ExemploPilha",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "ExemploSelectionSort",
+            "request": "launch",
+            "mainClass": "ExemploSelectionSort",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "ExemplosMapa",
+            "request": "launch",
+            "mainClass": "ExemplosMapa",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "Lista2",
+            "request": "launch",
+            "mainClass": "Lista2",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "Pedido",
+            "request": "launch",
+            "mainClass": "Pedido",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        }
+    ]
+}

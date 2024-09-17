@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "QuickSortDecrescente",
+            "request": "launch",
+            "mainClass": "QuickSortDecrescente",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "MesclarMapas",
+            "request": "launch",
+            "mainClass": "MesclarMapas",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "ContagemDePalavras",
+            "request": "launch",
+            "mainClass": "ContagemDePalavras",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "OrdemDeChegada",
+            "request": "launch",
+            "mainClass": "OrdemDeChegada",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "FilaDeEspera",
+            "request": "launch",
+            "mainClass": "FilaDeEspera",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "ex4_uni2",
+            "request": "launch",
+            "mainClass": "ex4_uni2",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "MesclarListas",
+            "request": "launch",
+            "mainClass": "MesclarListas",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "RemoverDuplicados",
+            "request": "launch",
+            "mainClass": "RemoverDuplicados",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "InversaoLista",
+            "request": "launch",
+            "mainClass": "InversaoLista",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
             "name": "ExemploQuickSort",
             "request": "launch",
             "mainClass": "ExemploQuickSort",

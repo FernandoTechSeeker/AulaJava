@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Grafos2",
+            "request": "launch",
+            "mainClass": "Grafos2",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "Grafo",
+            "request": "launch",
+            "mainClass": "Grafo",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "grafoss",
+            "request": "launch",
+            "mainClass": "grafoss",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "BuscaBinaria",
+            "request": "launch",
+            "mainClass": "BuscaBinaria",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "Grafo2",
+            "request": "launch",
+            "mainClass": "Grafo2",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "BuscaLinear",
+            "request": "launch",
+            "mainClass": "BuscaLinear",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "ExemploLinear",
+            "request": "launch",
+            "mainClass": "ExemploLinear",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "BinarySearchTree",
+            "request": "launch",
+            "mainClass": "BinarySearchTree",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
             "name": "ExemploArvoreBinaria",
             "request": "launch",
             "mainClass": "ExemploArvoreBinaria",

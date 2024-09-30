@@ -6,6 +6,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Exer10",
+            "request": "launch",
+            "mainClass": "Exer10",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "Exer09",
+            "request": "launch",
+            "mainClass": "Exer09",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "Exer08",
+            "request": "launch",
+            "mainClass": "Exer08",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "Exer07",
+            "request": "launch",
+            "mainClass": "Exer07",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "Exer06",
+            "request": "launch",
+            "mainClass": "Exer06",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "Exer05",
+            "request": "launch",
+            "mainClass": "Exer05",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "Exer04",
+            "request": "launch",
+            "mainClass": "Exer04",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "Exer03",
+            "request": "launch",
+            "mainClass": "Exer03",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "Exer02",
+            "request": "launch",
+            "mainClass": "Exer02",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "Exer01",
+            "request": "launch",
+            "mainClass": "Exer01",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "BFS",
+            "request": "launch",
+            "mainClass": "BFS",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
             "name": "Grafos2",
             "request": "launch",
             "mainClass": "Grafos2",

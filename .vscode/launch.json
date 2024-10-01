@@ -6,6 +6,76 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ex10_uni3",
+            "request": "launch",
+            "mainClass": "ex10_uni3",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "ex9_uni3",
+            "request": "launch",
+            "mainClass": "ex9_uni3",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "ex8_uni3",
+            "request": "launch",
+            "mainClass": "ex8_uni3",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "ex6_uni3",
+            "request": "launch",
+            "mainClass": "ex6_uni3",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "ex5_uni3",
+            "request": "launch",
+            "mainClass": "ex5_uni3",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "ex4_uni3",
+            "request": "launch",
+            "mainClass": "ex4_uni3",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "ex3_uni3",
+            "request": "launch",
+            "mainClass": "ex3_uni3",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "ex2_uni3",
+            "request": "launch",
+            "mainClass": "ex2_uni3",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "ex1_uni3",
+            "request": "launch",
+            "mainClass": "ex1_uni3",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "ex5_uni2",
+            "request": "launch",
+            "mainClass": "ex5_uni2",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
             "name": "Exer10",
             "request": "launch",
             "mainClass": "Exer10",

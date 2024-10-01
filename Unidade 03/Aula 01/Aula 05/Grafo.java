@@ -1,10 +1,11 @@
 import java.util.LinkedList;
 
 public class Grafo {
+    @SuppressWarnings("unused")
     private int numeroDeCidades;
     private LinkedList<Integer> adj[];  // Lista de adjacências para representar as estradas
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     Grafo(int v) {
         numeroDeCidades = v;
         adj = new LinkedList[v];  // Inicializa a lista de adjacências

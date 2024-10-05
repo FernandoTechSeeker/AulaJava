@@ -1,31 +1,25 @@
-package Projeto.Projeto.Projeto;
+package Projeto;
 
 import java.util.List;
 
-// montando a pizza
 public class Pizza {
     private List<String> sabores;
     private double preco;
-    private TamanhoPizza tamanho; // so lembrando que tudo que é privado so ve dentro da classe 
+    private TamanhoPizza tamanho;
 
-    // enum fazer a tipação dos dados
-    public enum TamanhoPizza{ // o enum é tudo maisculo // vai deixar publico pra vizualar podendo colocar no private
-
+    public enum TamanhoPizza{
         BROTO,
-        GRANDE, 
+        GRANDE,
         GIGA;
-        // foi criando uma lista pro enum pra achar pelo indice 
-        public static TamanhoPizza getByIndex(int index) throws IllegalAccessException{ // corrigiu
+
+        public static TamanhoPizza getByIndex(int index){
             TamanhoPizza[] tamanhos = TamanhoPizza.values();
-            if (index >= 0 && index < tamanhos.length){
+            if (index >= 0 && index < tamanhos.length) {
                 return tamanhos[index];
             }else{
-                throw new IllegalAccessException("Posição incorreta do index"); // correção do programa diferente da aula
-                
-                
+                throw new IllegalArgumentException("Posição incorreta do index");
             }
         }
-
     }
 
     public Pizza(List<String> sabores, double preco, TamanhoPizza tamanho){
@@ -37,9 +31,11 @@ public class Pizza {
     public List<String> getSabores(){
         return sabores;
     }
-    public Double getPreco(){
+
+    public double getPreco(){
         return preco;
     }
+
     public TamanhoPizza getTamanho(){
         return tamanho;
     }
@@ -55,6 +51,5 @@ public class Pizza {
     public void setTamanho(TamanhoPizza tamanho){
         this.tamanho = tamanho;
     }
-
-
+    
 }

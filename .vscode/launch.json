@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Pizzaria",
             "request": "launch",
+            "mainClass": "Projeto.Pizzaria",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "Pizzaria",
+            "request": "launch",
             "mainClass": "Projeto.Projeto.Projeto.Pizzaria",
             "projectName": "AulaJava-Atividade-01_815a0bc4"
         },

@@ -41,9 +41,11 @@ public class Pizzaria {
                     break;
                 case 4:
                     gerarRelatorio(listaPedidos);
+                    System.out.println("Relatório do dia: ");
                     break;
                 case 5:
                     gerarListaClientes(listaClientes);
+                    System.out.println("Clientes cadrastrados: ");
                     break;
                 case 9:
                     System.out.println("Até amanhã...");

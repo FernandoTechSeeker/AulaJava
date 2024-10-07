@@ -1,17 +1,21 @@
 package Projeto;
 
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
 public class Cardapio {
     private Map<String, Double> cardapio;
+
 
     public Cardapio() {
         this.cardapio = new HashMap<>();
         inicializarCardapio();
     }
+
 
     private void inicializarCardapio() {
         cardapio.put("Margherita", 30.00);
@@ -26,9 +30,11 @@ public class Cardapio {
         cardapio.put("Especial da casa", 42.20);
     }
 
+
     public Map<String, Double> getCardapio(){
         return cardapio;
     }
+
 
     public double getPrecoJusto(List<String> sabores){
         List<String> saboresEncontrados = new ArrayList<>();
@@ -43,9 +49,11 @@ public class Cardapio {
             }
         }
 
+
         for (String sabor : saboresEncontrados) {
             precoTotal += cardapio.get(sabor)/totalSabores;
         }
+
 
         return precoTotal;
     }

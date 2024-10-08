@@ -1,7 +1,9 @@
 package Projeto;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 import Projeto.Pizza.TamanhoPizza;
@@ -41,7 +43,7 @@ public class Pizzaria {
                     break;
                 case 4:
                     gerarRelatorio(listaPedidos);
-                    System.out.println("Relatório do dia: ");
+                    System.out.println("Fim do Relatório ");
                     break;
                 case 5:
                     gerarListaClientes(listaClientes);
@@ -269,12 +271,62 @@ public class Pizzaria {
         }
     }
 
-    // Método para gerar relatório de vendas
-    private static void gerarRelatorio(List<Pedido> listaPedidos) {
-        System.out.println("RELATÓRIO DE VENDAS:");
+   
+       // Método para gerar relatório completo, incluindo grafos e faturamento total
+    public static void gerarRelatorio(List<Pedido> listaPedidos) {
+        double faturamentoTotal = 0;
+        Map<String, Integer> frequenciaSabores = new HashMap<>();
+
+        // Mapa para representar o grafo de sabores (sabores que aparecem juntos)
+        Map<String, Map<String, Integer>> grafoSabores = new HashMap<>();
+
+        // Percorrer todos os pedidos e calcular faturamento
         for (Pedido pedido : listaPedidos) {
-            System.out.println("Pedido ID: " + pedido.getId() + " - Cliente: " + pedido.getCliente().getNome() + " - Total: R$ " + pedido.getValorTotal());
+            faturamentoTotal += pedido.getValorTotal();
+
+            // Percorrer todas as pizzas do pedido
+            for (Pizza pizza : pedido.getPizzas()) {
+                List<String> sabores = pizza.getSabores();
+
+                // Atualizar a frequência de cada sabor
+                for (String sabor : sabores) {
+                    frequenciaSabores.put(sabor, frequenciaSabores.getOrDefault(sabor, 0) + 1);
+
+                    // Inicializar o grafo para esse sabor, se ainda não existir
+                    grafoSabores.putIfAbsent(sabor, new HashMap<>());
+
+                    // Fazer ligações entre todos os sabores da pizza
+                    for (String saborRelacionado : sabores) {
+                        if (!sabor.equals(saborRelacionado)) {
+                            // Atualiza a ligação (aresta) entre os dois sabores
+                            Map<String, Integer> arestas = grafoSabores.get(sabor);
+                            arestas.put(saborRelacionado, arestas.getOrDefault(saborRelacionado, 0) + 1);
+                        }
+                    }
+                }
+            }
         }
+
+        // Exibir faturamento total
+        System.out.println("Faturamento total: R$ " + faturamentoTotal);
+
+        // Exibir os sabores mais populares
+        System.out.println("\nSabores mais populares:");
+        for (Map.Entry<String, Integer> entry : frequenciaSabores.entrySet()) {
+            System.out.println("Sabor: " + entry.getKey() + " - Pedidos: " + entry.getValue());
+        }
+
+        // Exibir as ligações entre os sabores (grafo)
+        System.out.println("\nLigações entre sabores (Sabores que apareceram juntos):");
+        for (Map.Entry<String, Map<String, Integer>> entry : grafoSabores.entrySet()) {
+            String sabor = entry.getKey();
+            Map<String, Integer> ligacoes = entry.getValue();
+            System.out.println("Sabor " + sabor + " foi pedido junto com: ");
+            for (Map.Entry<String, Integer> ligacao : ligacoes.entrySet()) {
+                System.out.println(" - " + ligacao.getKey() + ": " + ligacao.getValue() + " vezes");
+            }
+        }
+
     }
 
     // Método para gerar lista de clientes

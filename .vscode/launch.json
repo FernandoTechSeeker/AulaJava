@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Exemplo",
             "request": "launch",
+            "mainClass": "Aula6.Exemplo",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
+            "name": "Exemplo",
+            "request": "launch",
             "mainClass": "Aula5.Exemplo",
             "projectName": "AulaJava-Atividade-01_815a0bc4"
         },

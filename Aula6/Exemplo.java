@@ -11,6 +11,7 @@ public class Exemplo {
         gato.fazerBarulho();
         gato.comer();
         
+        System.out.println(cachorro.TIPO_ANIMAL);
     }
     
 }

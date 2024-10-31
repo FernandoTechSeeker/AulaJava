@@ -5,5 +5,8 @@ interface Animal {
 
     void fazerBarulho();
     void comer();
+
+    
+
     
 }

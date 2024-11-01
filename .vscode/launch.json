@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Exemplo1",
+            "request": "launch",
+            "mainClass": "Aula.Pacote1.Exemplo1",
+            "projectName": "AulaJava-Atividade-01_815a0bc4"
+        },
+        {
+            "type": "java",
             "name": "Exemplo",
             "request": "launch",
             "mainClass": "Aula8.Exemplo",

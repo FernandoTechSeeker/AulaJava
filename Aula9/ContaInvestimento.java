@@ -11,8 +11,8 @@ public class ContaInvestimento extends ContaBancaria{
     }
 
     public void Investir(double valor){
-        if (valor <= saldo ) {   
-            saldo -= valor;
+        if (valor <= getSaldo()) {   
+            setSaldo(getSaldo() - valor); 
             double valorInvestido = valor - TAXA_ADMINSTRACAO;
             saldoInvestido  += valorInvestido;
             System.out.println("Investimento de R$"+valorInvestido+ " realizado");
@@ -26,7 +26,7 @@ public class ContaInvestimento extends ContaBancaria{
     public void Resgatar(double valor){
         if (valor <= saldoInvestido) {
             saldoInvestido -= valor;
-            saldo += valor; 
+            setSaldo(getSaldo()+ valor); 
             System.out.println("Saldo investido atualizado: R$"+saldoInvestido);
             super.consultarSaldo();     
         }else{
@@ -35,7 +35,7 @@ public class ContaInvestimento extends ContaBancaria{
     }
     
     public double consultarSaldoInvestido(){
-        System.out.println("Saldo investid: R$"+saldoInvestido);
+        System.out.println("Saldo investido: R$"+saldoInvestido);
         return saldoInvestido;
     }
 
